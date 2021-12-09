@@ -6,16 +6,16 @@ import Textarea from "./Components/Textarea.js";
 import Notes from "./Components/Notes.js";
 
 function App() {
-  function showTextarea(){
-    if(window.location.pathname==="/"){
-      return <Textarea/>
-    }
-  }
-  function showNotes(){
-    if(window.location.pathname==="/notes"){
-      return<Notes/>
-    }
-  }
+  // function showTextarea(){
+  //   if(window.location.pathname==="/"){
+  //     return <Textarea/>
+  //   }
+  // }
+  // function showNotes(){
+  //   if(window.location.pathname==="/notes"){
+  //     return<Notes/>
+  //   }
+  // }
   return (
     <>
       {/* <Router> */}
@@ -23,9 +23,9 @@ function App() {
           <Navbar />
         </header>
         <main>
-          {showTextarea}
-          {showNotes}
-          {/* <Textarea/> */}
+          {/* {showTextarea}
+          {showNotes} */}
+          <Textarea/>
           {/* <Routes> */}
             {/* <Route path="/" element={<Textarea />} />
             <Route path="/notes" element={<Notes />} />

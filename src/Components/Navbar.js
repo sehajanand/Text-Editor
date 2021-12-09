@@ -26,10 +26,10 @@ export default function Navbar() {
             <a className="nav-link active" aria-current="page" href="/">
               Home
             </a>
-            <a className="nav-link" href="/notes">
+            <a className="nav-link" href="/">
               Notes
             </a>
-            <a className="nav-link" href="/notes" onClick={deleteallnotes}>
+            <a className="nav-link" href="/" onClick={deleteallnotes}>
               Delete All Notes
             </a>
           </div>
