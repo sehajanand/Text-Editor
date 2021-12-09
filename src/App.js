@@ -3,7 +3,7 @@ import Footer from "./Components/Footer.js";
 import Navbar from "./Components/Navbar.js";
 import Textarea from "./Components/Textarea.js";
 // import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Notes from "./Components/Notes.js";
+// import Notes from "./Components/Notes.js";
 
 function App() {
   // function showTextarea(){
