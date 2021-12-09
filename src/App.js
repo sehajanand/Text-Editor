@@ -2,26 +2,27 @@ import "./App.css";
 import Footer from "./Components/Footer.js";
 import Navbar from "./Components/Navbar.js";
 import Textarea from "./Components/Textarea.js";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Notes from "./Components/Notes.js";
+// import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+// import Notes from "./Components/Notes.js";
 
 function App() {
   return (
     <>
-      <Router>
+      {/* <Router> */}
         <header>
           <Navbar />
         </header>
         <main>
-          <Routes>
-            <Route path="/" element={<Textarea />} />
+          <Textarea/>
+          {/* <Routes> */}
+            {/* <Route path="/" element={<Textarea />} />
             <Route path="/notes" element={<Notes />} />
-          </Routes>
+          </Routes> */}
         </main>
         <footer>
           <Footer />
         </footer>
-      </Router>
+      {/* </Router> */}
     </>
   );
 }
