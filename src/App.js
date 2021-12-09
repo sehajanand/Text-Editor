@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Footer from "./Components/Footer.js";
+import Navbar from "./Components/Navbar.js";
+import Textarea from "./Components/Textarea.js";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Notes from "./Components/Notes.js";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Router>
+        <header>
+          <Navbar />
+        </header>
+        <main>
+          <Routes>
+            <Route path="/" element={<Textarea />} />
+            <Route path="/notes" element={<Notes />} />
+          </Routes>
+        </main>
+        <footer>
+          <Footer />
+        </footer>
+      </Router>
+    </>
   );
 }
 
 export default App;
+//Components:-navbar,textcomponent,notescomponents
+//Functionalities:-Copy Text,Improve Text,Upercase,Lowercase,Clear Text,Take Note,preview,words and chars,reading time

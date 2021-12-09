@@ -1,19 +1,4 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-footer {
-  display: flex;
-  justify-content: center;
-  background-color: black;
-  align-items: center;
-  height: 7vh;
-}
-footer > p {
-  color: white;
-}
-main {
-  min-height: calc(100vh - 66.6px - 7vh);
+.navbar {
   background: #c9d6ff; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to left,
@@ -25,4 +10,5 @@ main {
     #c9d6ff,
     #e2e2e2
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /* pointer-events: ; */
 }
